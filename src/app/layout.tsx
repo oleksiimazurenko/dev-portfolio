@@ -1,10 +1,10 @@
 import { ThemeSwitch } from '@/features/theme-switch'
-import ActiveSectionContextProvider from '@/shared/context/active-section-context'
-import ThemeContextProvider from '@/shared/context/theme-context'
 import { Footer } from '@/widgets/footer'
 import { Header } from '@/widgets/header'
 import { Inter } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
+import ActiveSectionContextProvider from '@/shared/context/active-section-context'
+import ThemeContextProvider from '@/shared/context/theme-context'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
