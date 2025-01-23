@@ -1,3 +1,5 @@
+const path = require("path");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -7,10 +9,7 @@ const nextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
-  },
-  experimental: {
-    serverActions: true,
-  },
+  }
 };
 
 module.exports = nextConfig;
