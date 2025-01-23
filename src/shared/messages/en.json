@@ -1,0 +1,41 @@
+{
+	"Navbar": {
+		"Home": "Home",
+		"About": "About",
+		"Projects": "Projects",
+		"Skills": "Skills",
+		"Experience": "Experience",
+		"Contact": "Contact"
+	},
+	"Intro": {
+		"download_cv": "Download CV",
+		"contact_me_here": "Contact me here"
+	},
+	"AboutMe": {
+		"title": "About Me"
+	},
+	"MyProjects": {
+		"title": "My Projects"
+	},
+	"MySkills": {
+		"title": "My Skills"
+	},
+	"MyExperience": {
+		"title": "My Experience"
+	},
+	"ContactMe": {
+		"title": "Contact Me",
+		"please_contact": "Please contact me directly at",
+		"or_send_me": "or send me a message"
+	},
+	"Footer": {
+		"owner": "Alex",
+		"all_rights_reserved": "All rights reserved",
+		"about_this_website": "About this website",
+		"built_with": "built with"
+	},
+	"Metadata": {
+		"title": "Alex's Portfolio",
+		"description": "Alex's Portfolio - Full-stack developer with 3 years of experience. I enjoy building sites & apps. My focus is React (Next.js with Headless CMS)."
+	}
+}

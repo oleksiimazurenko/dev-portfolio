@@ -1,16 +1,14 @@
 'use client'
 
-import { sendEmail } from '@/shared/actions/send-email'
 import { useSectionInView } from '@/shared/lib/hooks'
 import { motion } from 'framer-motion'
-import { useRef } from 'react'
-import toast from 'react-hot-toast'
-import { SubmitBtn } from '../../../features/submit-btn/ui/submit-btn'
+import { useTranslations } from 'next-intl'
 import { SectionHeading } from '../../section-heading/ui/section-heading'
 
 export function Contact() {
 	const { ref } = useSectionInView('Contact')
-	const refForm = useRef<HTMLFormElement>(null)
+	const t = useTranslations('ContactMe')
+	// const refForm = useRef<HTMLFormElement>(null)
 
 	return (
 		<motion.section
@@ -30,17 +28,25 @@ export function Contact() {
 				once: true,
 			}}
 		>
-			<SectionHeading>Contact me</SectionHeading>
+			<SectionHeading>{t('title')}</SectionHeading>
 
 			<p className='text-gray-700 -mt-6 dark:text-white/80'>
-				Please contact me directly at{' '}
+				{t('please_contact')}{' '}
 				<a className='underline' href='mailto:example@gmail.com'>
 					newiqa@gmail.com
 				</a>{' '}
-				or through this form.
+				{t('or_send_me')}{' '}
+				<a
+					className='underline'
+					href='https://t.me/AlekseyMazurenko'
+					target='_blank'
+				>
+					telegram
+				</a>
+				.
 			</p>
 
-			<form
+			{/* <form
 				className='mt-10 flex flex-col dark:text-black'
 				ref={refForm}
 				onSubmit={async event => {
@@ -76,7 +82,7 @@ export function Contact() {
 					maxLength={5000}
 				/>
 				<SubmitBtn />
-			</form>
+			</form> */}
 		</motion.section>
 	)
 }

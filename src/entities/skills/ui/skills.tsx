@@ -4,6 +4,7 @@ import { SectionHeading } from '@/entities/section-heading/ui/section-heading'
 import { skillsData } from '@/shared/lib/data'
 import { useSectionInView } from '@/shared/lib/hooks'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const fadeInAnimationVariants = {
 	initial: {
@@ -21,6 +22,7 @@ const fadeInAnimationVariants = {
 
 export function Skills() {
 	const { ref } = useSectionInView('Skills')
+	const t = useTranslations('MySkills')
 
 	return (
 		<section
@@ -28,7 +30,7 @@ export function Skills() {
 			ref={ref}
 			className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
 		>
-			<SectionHeading>My skills</SectionHeading>
+			<SectionHeading>{t('title')}</SectionHeading>
 			<ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
 				{skillsData.map((skill, index) => (
 					<motion.li

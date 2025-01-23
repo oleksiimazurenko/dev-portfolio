@@ -1,0 +1,41 @@
+{
+	"Navbar": {
+		"Home": "Головна",
+		"About": "Про мене",
+		"Projects": "Проекти",
+		"Skills": "Навички",
+		"Experience": "Досвід",
+		"Contact": "Контакти"
+	},
+	"Intro": {
+		"download_cv": "Завантажити CV",
+		"contact_me_here": "Мої контакти тут"
+	},
+	"AboutMe": {
+		"title": "Про мене"
+	},
+	"MyProjects": {
+		"title": "Мої проекти"
+	},
+	"MySkills": {
+		"title": "Мої навички"
+	},
+	"MyExperience": {
+		"title": "Мій досвід"
+	},
+	"ContactMe": {
+		"title": "Зв'язатися зі мною",
+		"please_contact": "Будь ласка, зв'яжіться зі мною напряму за адресою",
+		"or_send_me": "або надішліть мені повідомлення"
+	},
+	"Footer": {
+		"owner": "Олексій",
+		"all_rights_reserved": "Всі права захищені",
+		"about_this_website": "Про цей сайт",
+		"built_with": "побудовано за допомогою"
+	},
+	"Metadata": {
+		"title": "Alex's Portfolio",
+		"description": "Alex's Portfolio - Full-stack developer with 3 years of experience. I enjoy building sites & apps. My focus is React (Next.js with Headless CMS)."
+	}
+}

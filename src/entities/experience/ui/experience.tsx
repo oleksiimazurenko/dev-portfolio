@@ -2,8 +2,9 @@
 
 import { SectionHeading } from '@/entities/section-heading/ui/section-heading'
 import { useTheme } from '@/shared/context/theme-context'
-import { experiencesData } from '@/shared/lib/data'
 import { useSectionInView } from '@/shared/lib/hooks'
+import { experiencesData } from '@base/src/shared/lib/experiences-data'
+import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 import {
@@ -15,12 +16,16 @@ import 'react-vertical-timeline-component/style.min.css'
 export function Experience() {
 	const { ref } = useSectionInView('Experience')
 	const { theme } = useTheme()
+	const locale = useLocale()
+	const t = useTranslations('MyExperience')
+
+	const experiences = locale === 'en' ? experiencesData.en : experiencesData.ua
 
 	return (
 		<section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
-			<SectionHeading>My experience</SectionHeading>
+			<SectionHeading>{t('title')}</SectionHeading>
 			<VerticalTimeline lineColor=''>
-				{experiencesData.map((item, index) => (
+				{experiences.map((item, index) => (
 					<React.Fragment key={index}>
 						<VerticalTimelineElement
 							contentStyle={{
