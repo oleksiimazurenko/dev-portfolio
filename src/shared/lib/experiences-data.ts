@@ -180,7 +180,7 @@ export const experiencesData = {
 			location: 'Дистанційна робота, Україна',
 			link: '',
 			description:
-				'Робота з Next.js (перехід з Pages Router на App Router, FSD), поліпшення UX і SEO (sitemaps, robots.txt, метатеги, JSON-LD, canonical, атрибути зображень), налаштування Directus CMS і CRON Tasks, code review молодших розробників. Наголос на покращенні архітектури, user-friendly інтерфейсах та аналітиці.',
+				'Робота з Next.js (перехід з Pages Router на App Router, FSD), поліпшення UX і SEO (sitemaps, robots.txt, метатеги, JSON-LD, canonical, атрибути зображень), налаштування Directus CMS і CRON Tasks, code review молодших розробників. Наголос на покращенні архітектури, user-friendly інтерфейсах та аналітиці. Робота в команді.',
 			icon: React.createElement(MdBuild),
 			date: '2024.09 - зараз',
 		},

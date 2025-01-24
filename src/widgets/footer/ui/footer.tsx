@@ -14,7 +14,7 @@ export function Footer() {
       <p className="text-xs">
         <span className="font-semibold">{t('about_this_website')}:</span> {t('built_with')}{" "}
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
+        Framer Motion, Vercel hosting.
       </p>
     </footer>
   );
