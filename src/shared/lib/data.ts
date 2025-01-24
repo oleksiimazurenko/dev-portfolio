@@ -54,5 +54,7 @@ export const skillsData = [
 	'Figma',
 	'Postgres',
 	'Clerk',
-	'AuthJS'
+	'AuthJS',
+	'Next-intl',
+	'Next Auth V5'
 ] as const
