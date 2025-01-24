@@ -13,7 +13,7 @@ export function Header() {
 	const t = useTranslations('Navbar')
 
 	return (
-		<header className='z-[999] relative w-max'>
+		<header className='z-[99] relative w-max'>
 			<motion.div
 				className='fixed top-0 left-1/2 w-full sm:w-max rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:rounded-full dark:bg-gray-950/80 dark:border-black/40 dark:bg-opacity-75'
 				initial={{ y: -100, x: '-50%', opacity: 0 }}

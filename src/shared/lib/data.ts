@@ -46,5 +46,13 @@ export const skillsData = [
 	'Mongoose',
 	'GSAP',
 	'Directus',
-	'Visx'
+	'Visx',
+	'Vercel',
+	'Docker',
+	'Vite',
+	'Sass',
+	'Figma',
+	'Postgres',
+	'Clerk',
+	'AuthJS'
 ] as const

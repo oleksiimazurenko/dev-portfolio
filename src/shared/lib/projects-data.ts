@@ -15,21 +15,21 @@ export const projectsData = {
 		{
 			title: 'CorpComment',
 			description:
-				'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
+				'Pet project. Full-stack development. Users can leave public feedback for companies.',
 			tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
 			imageUrl: corpcommentImg,
 		},
 		{
 			title: 'rmtDev',
 			description:
-				'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
+				'Pet project. Job board for remote developer job searches. Worked as a front-end developer, implemented filtering, sorting, and pagination.',
 			tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
 			imageUrl: rmtdevImg,
 		},
 		{
 			title: 'Word Analytics',
 			description:
-				'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
+				'Pet project. A public web application for quick text analytics. Displays word count, character count, and social media post limits.',
 			tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
 			imageUrl: wordanalyticsImg,
 		},
@@ -38,23 +38,23 @@ export const projectsData = {
 		{
 			title: 'CorpComment',
 			description:
-				'Я працював full-stack розробником над цим стартап-проєктом протягом 2 років. Користувачі можуть залишати публічні відгуки компаніям.',
+				'Pet-проєкт. Full-stack розробка. Користувачі можуть залишати публічні відгуки компаніям.',
 			tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
 			imageUrl: corpcommentImg,
 		},
 		{
 			title: 'rmtDev',
 			description:
-				'Дошка оголошень для віддаленої роботи розробників. Працював front-end розробником, реалізував фільтрацію, сортування та пагінацію.',
+				'Pet-проєкт. Дошка оголошень пошуку віддаленої роботи розробників. Front-end розробником, реалізував фільтрацію, сортування та пагінацію.',
 			tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
 			imageUrl: rmtdevImg,
 		},
 		{
 			title: 'Word Analytics',
 			description:
-				'Публічний веб-додаток для швидкої аналітики тексту. Показує кількість слів, символів та обмеження для постів у соціальних мережах.',
+				'Pet-проєкт. Публічний веб-додаток для швидкої аналітики тексту. Показує кількість слів, символів та обмеження для постів у соціальних мережах.',
 			tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
 			imageUrl: wordanalyticsImg,
 		},
-	]
+	],
 }
