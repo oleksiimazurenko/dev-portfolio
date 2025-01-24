@@ -3,6 +3,7 @@ import rmtdevImg from '@base/public/rmt-dev.png'
 import wordanalyticsImg from '@base/public/word-analytics.png'
 import petsoftImg from '@base/public/pet-soft.png'
 import eventoImg from '@base/public/evento.png'
+import landeeImg from '@base/public/landee.png'
 import { StaticImageData } from 'next/image'
 
 export type ProjectDataType = {
@@ -55,6 +56,13 @@ export const projectsData = {
 			url: 'https://evento-chi-one.vercel.app/events/austin',
 			imageUrl: eventoImg,
 		},
+		{
+			"title": "Landee",
+			"description": "Full-stack development. A mini website builder platform.",
+			"tags": ["React", "Next.js", "Prisma", "Tailwind", "Radix UI", "MongoDB", "Visx", "GSAP", "Zod", 'TypeScript', "MUI UI", "Clerk", "Next-intl", "D3"],
+			"url": "https://landee.app",
+			"imageUrl": landeeImg
+		}
 	],
 	ua: [
 		{
@@ -94,6 +102,13 @@ export const projectsData = {
 			"tags": ["React", "Next.js", "Prisma", "Tailwind", "Radix UI", "Framer", "SQL", 'TypeScript'],
 			"url": "https://evento-chi-one.vercel.app/events/austin",
 			"imageUrl": eventoImg
+		},
+		{
+			"title": "Landee",
+			"description": "Full-stack розробка. Платформа для створення міні-сайтів.",
+			"tags": ["React", "Next.js", "Prisma", "Tailwind", "Radix UI", "MongoDB", "Visx", "GSAP", "Zod", 'TypeScript', "MUI UI", "Clerk", "Next-intl", "D3"],
+			"url": "https://landee.app",
+			"imageUrl": landeeImg
 		}
 	],
 }
