@@ -13,7 +13,7 @@ import { ENDescription } from '../locale/en-description'
 import { UKDescription } from '../locale/uk-description'
 
 export function Intro() {
-	const { ref } = useSectionInView('Home', 0.5)
+	const { ref } = useSectionInView('Home')
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 	const t = useTranslations('Intro')
 	const locale = useLocale()
