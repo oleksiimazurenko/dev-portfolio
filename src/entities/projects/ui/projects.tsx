@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import React from 'react'
 
 export function Projects() {
-	const { ref } = useSectionInView('Projects', 0.5)
+	const { ref } = useSectionInView('Projects')
 	const locale = useLocale()
 	const t = useTranslations('MyProjects')
 
