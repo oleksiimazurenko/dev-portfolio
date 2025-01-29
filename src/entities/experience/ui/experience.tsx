@@ -24,7 +24,7 @@ export function Experience() {
 	return (
 		<section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
 			<SectionHeading>{t('title')}</SectionHeading>
-			<VerticalTimeline lineColor=''>
+			<VerticalTimeline animate={false}>
 				{experiences.map((item, index) => (
 					<React.Fragment key={index}>
 						<VerticalTimelineElement
@@ -41,6 +41,7 @@ export function Experience() {
 									theme === 'light'
 										? '0.4rem solid #9ca3af'
 										: '0.4rem solid rgba(255, 255, 255, 0.5)',
+										width: '30px',
 							}}
 							date={item.date}
 							icon={item.icon}
@@ -50,16 +51,17 @@ export function Experience() {
 								fontSize: '1.5rem',
 							}}
 						>
-							<Link
-								href={item.link}
-								className='relative font-semibold capitalize text-s hover:text-slate-400 underline decoration-indigo-500/30 decoration-indigo-500'
-							>
-								{item.title}
-							</Link>
-							<p className='font-normal !mt-0'>{item.location}</p>
-							<p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
-								{item.description}
-							</p>
+								<Link
+									href={item.link}
+									className='relative font-semibold capitalize text-s hover:text-slate-400 underline decoration-indigo-500/30'
+								>
+									{item.title}
+								</Link>
+								<p className='font-normal !mt-0'>{item.location}</p>
+
+								<p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
+									{item.description}
+								</p>
 						</VerticalTimelineElement>
 					</React.Fragment>
 				))}
