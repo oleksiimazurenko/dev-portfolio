@@ -12,7 +12,8 @@
 		"contact_me_here": "Мої контакти тут"
 	},
 	"AboutMe": {
-		"title": "Про мене"
+		"title": "Про мене",
+		"not_working_if": "Не працюю там, де не цінують принципи"
 	},
 	"MyProjects": {
 		"title": "Мої проекти"

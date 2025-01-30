@@ -2,7 +2,7 @@
 
 import { SectionHeading } from '@/entities/section-heading/ui/section-heading'
 import { useTheme } from '@/shared/context/theme-context'
-import { useSectionInView } from '@/shared/lib/hooks'
+import { useBodyWidth, useSectionInView } from '@/shared/lib/hooks'
 import { experiencesData } from '@base/src/shared/lib/experiences-data'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
@@ -19,12 +19,14 @@ export function Experience() {
 	const locale = useLocale()
 	const t = useTranslations('MyExperience')
 
+	const bodyWidth = useBodyWidth()
+
 	const experiences = locale === 'en' ? experiencesData.en : experiencesData.ua
 
 	return (
 		<section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
 			<SectionHeading>{t('title')}</SectionHeading>
-			<VerticalTimeline animate={false}>
+			<VerticalTimeline animate={bodyWidth < 1220 ? false : true}>
 				{experiences.map((item, index) => (
 					<React.Fragment key={index}>
 						<VerticalTimelineElement
@@ -41,7 +43,7 @@ export function Experience() {
 									theme === 'light'
 										? '0.4rem solid #9ca3af'
 										: '0.4rem solid rgba(255, 255, 255, 0.5)',
-										width: '30px',
+								width: '30px',
 							}}
 							date={item.date}
 							icon={item.icon}
@@ -51,17 +53,17 @@ export function Experience() {
 								fontSize: '1.5rem',
 							}}
 						>
-								<Link
-									href={item.link}
-									className='relative font-semibold capitalize text-s hover:text-slate-400 underline decoration-indigo-500/30'
-								>
-									{item.title}
-								</Link>
-								<p className='font-normal !mt-0'>{item.location}</p>
+							<Link
+								href={item.link}
+								className='relative font-semibold capitalize text-s hover:text-slate-400 underline decoration-indigo-500/30'
+							>
+								{item.title}
+							</Link>
+							<p className='font-normal !mt-0'>{item.location}</p>
 
-								<p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
-									{item.description}
-								</p>
+							<p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
+								{item.description}
+							</p>
 						</VerticalTimelineElement>
 					</React.Fragment>
 				))}

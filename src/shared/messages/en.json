@@ -12,7 +12,8 @@
 		"contact_me_here": "Contact me here"
 	},
 	"AboutMe": {
-		"title": "About Me"
+		"title": "About Me",
+		"not_working_if": "I don’t work in places that don’t value the principles of"
 	},
 	"MyProjects": {
 		"title": "My Projects"
