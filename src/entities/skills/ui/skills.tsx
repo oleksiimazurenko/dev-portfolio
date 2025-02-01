@@ -56,12 +56,12 @@ export function Skills() {
 				))}
 			</ul> */}
 
-			<div className='h-[250px] w-full border-[0.5px] dark:border-slate-200/30 border-slate-900/30 rounded-md'>
+			<div className='h-[200px] w-full border-[0.5px] dark:border-slate-200/30 border-slate-900/30 rounded-md'>
 				<FallingText
 					text={sd.join(' ')}
 					highlightWords={sd}
 					// highlightClass='highlighted'
-					trigger='click'
+					trigger='scroll'
 					backgroundColor='transparent'
 					wireframes={false}
 					gravity={0.60}

@@ -2,10 +2,10 @@
 
 import { useActiveSectionContext } from '@/shared/context/active-section-context'
 import { links } from '@/shared/lib/data'
+import { Link } from '@base/src/shared/i18n/routing'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
 export function Header() {
 	const { activeSection, setActiveSection, setTimeOfLastClick } =

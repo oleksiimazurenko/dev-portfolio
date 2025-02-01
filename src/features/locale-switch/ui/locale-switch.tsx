@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from '@base/src/shared/i18n/routing'
+import { usePathname, useRouter } from '@base/src/shared/i18n/routing'
 import { useLocale } from 'next-intl'
 import { useTransition } from 'react'
 
@@ -8,11 +8,20 @@ export function LocaleSwitch() {
 	const locale = useLocale()
 	const [isPending, startTransition] = useTransition()
 	const router = useRouter()
+	const pathname = usePathname()
 
-	const onSelectChange = () => {
+	function onSelectChange() {
 		const nextLocale = locale === 'en' ? 'ua' : 'en'
+
 		startTransition(() => {
-			router.replace(nextLocale, { scroll: false })
+			router.replace(
+				// @ts-expect-error -- TypeScript will validate that only known `params`
+				// are used in combination with a given `pathname`. Since the two will
+				// always match for the current route, we can skip runtime checks.
+
+				{ pathname, scroll: false },
+				{ locale: nextLocale }
+			)
 		})
 	}
 

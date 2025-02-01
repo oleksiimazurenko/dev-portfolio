@@ -23,6 +23,10 @@ export const links = [
 		name: 'Contact',
 		hash: '#contact',
 	},
+	{
+		name: 'CI/CD',
+		hash: '/ci-cd',
+	},
 ] as const
 
 export const skillsData = [

@@ -5,7 +5,8 @@
 		"Projects": "Projects",
 		"Skills": "Skills",
 		"Experience": "Experience",
-		"Contact": "Contact"
+		"Contact": "Contact",
+		"CI/CD": "CI/CD"
 	},
 	"Intro": {
 		"download_cv": "Download CV",
@@ -35,6 +36,9 @@
 		"about_this_website": "About this website",
 		"built_with": "built with"
 	},
+	"cicd": {
+    "title": "How I Implement CI/CD"
+  },
 	"Metadata": {
 		"title": "Alex's Portfolio",
 		"description": "Alex's Portfolio - Full-stack developer with 3 years of experience. I enjoy building sites & apps. My focus is React (Next.js with Headless CMS)."
