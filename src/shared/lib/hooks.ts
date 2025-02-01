@@ -38,7 +38,7 @@ export function useSectionInView(sectionName: SectionName) {
 
 
 export function useBodyWidth() {
-  const [width, setWidth] = useState(document.body.clientWidth);
+  const [width, setWidth] = useState(0);
 
   useLayoutEffect(() => {
     

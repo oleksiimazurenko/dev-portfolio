@@ -1,10 +1,11 @@
 'use client'
 
 import { SectionHeading } from '@/entities/section-heading/ui/section-heading'
-import { skillsData } from '@/shared/lib/data'
 import { useSectionInView } from '@/shared/lib/hooks'
-import { motion } from 'framer-motion'
+import { FallingText } from '@base/src/features/falling-text'
+import { skillsData } from '@base/src/shared/lib/data'
 import { useTranslations } from 'next-intl'
+import { useMemo } from 'react'
 
 const fadeInAnimationVariants = {
 	initial: {
@@ -24,14 +25,20 @@ export function Skills() {
 	const { ref } = useSectionInView('Skills')
 	const t = useTranslations('MySkills')
 
+	const sd = useMemo(
+		() => skillsData,
+		[]
+	)
+
 	return (
 		<section
 			id='skills'
 			ref={ref}
-			className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 h-min'
+			className='mb-28 max-w-[53rem] w-full scroll-mt-28 text-center sm:mb-40 h-min'
 		>
 			<SectionHeading>{t('title')}</SectionHeading>
-			<ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
+
+			{/* <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
 				{skillsData.map((skill, index) => (
 					<motion.li
 						className='bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
@@ -47,7 +54,21 @@ export function Skills() {
 						{skill}
 					</motion.li>
 				))}
-			</ul>
+			</ul> */}
+
+			<div className='h-[250px] w-full border-[0.5px] dark:border-slate-200/30 border-slate-900/30 rounded-md'>
+				<FallingText
+					text={sd.join(' ')}
+					highlightWords={sd}
+					// highlightClass='highlighted'
+					trigger='click'
+					backgroundColor='transparent'
+					wireframes={false}
+					gravity={0.60}
+					fontSize='18px'
+					mouseConstraintStiffness={0.9}
+				/>
+			</div>
 		</section>
 	)
 }

@@ -57,4 +57,4 @@ export const skillsData = [
 	'AuthJS',
 	'Next-intl',
 	'Next Auth V5'
-] as const
+]

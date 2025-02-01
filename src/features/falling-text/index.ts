@@ -1,0 +1,1 @@
+export { FallingText } from './ui/falling-text'
