@@ -16,7 +16,7 @@ export function UKDescription() {
 				<span className='underline'>обожнюю</span> відчуття, коли нарешті
 				знаходжу вирішення проблеми. Мій основний стек включає{' '}
 				<span className='font-medium'>
-					React, Next.js та Headless WordPress
+					React, Next.js та інтеграцію з різними Headless CMS
 				</span>
 				. Також я знайомий із TypeScript і Prisma. Я завжди прагну вивчати нові
 				технології. Наразі я шукаю{' '}
