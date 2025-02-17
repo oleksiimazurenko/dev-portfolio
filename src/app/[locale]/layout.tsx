@@ -52,7 +52,7 @@ export default async function RootLayout({
 	return (
 		<html lang={locale} className='!scroll-smooth'>
 			<body
-				className={`${andika.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+				className={`${andika.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-black dark:text-gray-50 dark:text-opacity-90`}
 			>
 				<NextIntlClientProvider messages={messages}>
 					<div className='bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]' />

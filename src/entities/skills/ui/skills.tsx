@@ -2,33 +2,30 @@
 
 import { SectionHeading } from '@/entities/section-heading/ui/section-heading'
 import { useSectionInView } from '@/shared/lib/hooks'
-import { FallingText } from '@base/src/features/falling-text'
-import { skillsData } from '@base/src/shared/lib/data'
+import { skillColors, uniqueSkills } from '@base/src/shared/lib/data'
 import { useTranslations } from 'next-intl'
 import { useMemo } from 'react'
+import { ScrollReveal } from '../../scroll-reveal'
 
-const fadeInAnimationVariants = {
-	initial: {
-		opacity: 0,
-		y: 100,
-	},
-	animate: (index: number) => ({
-		opacity: 1,
-		y: 0,
-		transition: {
-			delay: 0.05 * index,
-		},
-	}),
-}
+// const fadeInAnimationVariants = {
+// 	initial: {
+// 		opacity: 0,
+// 		y: 100,
+// 	},
+// 	animate: (index: number) => ({
+// 		opacity: 1,
+// 		y: 0,
+// 		transition: {
+// 			delay: 0.05 * index,
+// 		},
+// 	}),
+// }
 
 export function Skills() {
 	const { ref } = useSectionInView('Skills')
 	const t = useTranslations('MySkills')
 
-	const sd = useMemo(
-		() => skillsData,
-		[]
-	)
+	const sd = useMemo(() => uniqueSkills, [])
 
 	return (
 		<section
@@ -56,7 +53,7 @@ export function Skills() {
 				))}
 			</ul> */}
 
-			<div className='h-[200px] w-full border-[0.5px] dark:border-slate-200/30 border-slate-900/30 rounded-md'>
+			{/* <div className='h-[200px] w-full border-[0.5px] dark:border-slate-200/30 border-slate-900/30 rounded-md'>
 				<FallingText
 					text={sd.join(' ')}
 					highlightWords={sd}
@@ -68,7 +65,18 @@ export function Skills() {
 					fontSize='18px'
 					mouseConstraintStiffness={0.9}
 				/>
-			</div>
+			</div> */}
+
+			<ScrollReveal
+				baseOpacity={20}
+				enableBlur={true}
+				baseRotation={2}
+				blurStrength={4}
+				uniqueSkills={sd}
+				skillColors={skillColors}
+			/>
+
+
 		</section>
 	)
 }

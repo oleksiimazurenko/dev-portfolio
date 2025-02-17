@@ -1,9 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-	content: [
-		'./src/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
-	],
+	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
 	theme: {
 		extend: {
 			backgroundImage: {

@@ -5,7 +5,7 @@ export function ENDescription() {
 		<Fragment>
 			<span className='font-bold'>Hi, I'm Oleksiy.</span> I am a{' '}
 			<span className='font-bold'>full-stack developer</span> with{' '}
-			<span className='font-bold'>3 years</span> of experience. I enjoy creating{' '}
+			<span className='font-bold'>4 years</span> of experience. I enjoy creating{' '}
 			<span className='italic'>websites and applications</span>.
 			<br />
 			My main focus is TypeScript (JS).
